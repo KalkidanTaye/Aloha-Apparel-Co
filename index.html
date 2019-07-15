@@ -7,16 +7,21 @@
     <title>Aloha Aparrel Co.</title>
     <meta name = "description" content = "A clothing brand for surfers in west coast">
     <script src="https://kit.fontawesome.com/a88829749c.js"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
 </head>
 <body>
-    <section id="logo_area">
-        <img id="aloha" src="images/aloha-logo.svg" alt="">
-            <img id="cart" src="images/cart-icon.svg">
-            <nav>
-                <ul>
+    <section class="logo_area">
+            <img class="aloha" src="images/aloha-logo.svg" alt="">
+            <img class="cart" src="images/cart-icon.svg">
+            
+    </section> 
+    <hr class="line">
+    <section class="navigation_area">      
+            <nav class="navigation">
+                <ul class="unordered">
                     <li><a href="#about">About</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="#featured">Featured</a></li>
@@ -26,46 +31,143 @@
     </section>    
         <section class="banner">
             <div class="bannerText">
-                   <h2>New Collection</h2>
-                   <h1>Summer 2019</h1>
+                   <h1>New Collection</h1><br>
+                   <h2>Spring/Summer 2019</h2>
             </div>   
        </section> 
-       <section id= "about">
-        <h3>Hand-Crafted Materials</h3>
+       <section class= "about">
+        <h3>Hand-Crafted <p>Styles</p></h3>
         <h4>Aloha Apparel Co. sells the finest ready-to-travel clothing. 
             Browse our current selection of products or sign-up for updates below. </h4>
     </section>
-    <secttion class= products>
-            <div class="wide mens">
-                <p> Men's</p>
+    <secttion class= "products">
+            <div class="wide_mens">
+                <p class="product-header"> Men's</p>
             </div>
-            <div class="square trends">
-                <p> Trends</p>
+            <div class="square_trends">
+                <p class="product-header"> Trends</p>
             </div>
-            <div class="square glasses">
-                <p> Glasses</p>
+            <div class="square_glasses">
+                <p class="product-header"> Glasses</p>
             </div>
-            <div class="square sale">
-                <p> Sale</p>
+            <div class="square_sale">
+                <p class="product-header"> Sale</p>
             </div>
-            <div class="square bags">
-                <p> Bags</p>
+            <div class="square_bags">
+                <p class="product-header"> Bags</p>
                 </div>
-            <div class="wide womens">
-                  <p>Women's</p>
+            <div class="wide_womens">
+                  <p class="product-header">Women's</p>
             </div>
-        </secttion>  
-        <section>
-            <h5>Sign-up for Updates</h5>
+        </secttion> 
+        <section class = "loved_products">
+            <h3>Most-Loved <p>Products</p></h3>
+            <div class="grid-slider-section">
+                <div class="grid-slider-wrap">
+                <div class="grid-slide">
+                    <div class="grid-slide-inner">
+                        <img src="images/stretch-knit-dress.jpg">
+                        <h4>dresses</h4>
+                        <p>Strech knit dresses</p>
+                        <h4>$169.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div> 
+                <div class="grid-slide">
+                        <div class="grid-slide-inner">
+                            <img src="images/cotton-blue-shirt.jpg">
+                            <h4>shirts</h4>
+                        <p>cotton blue shirt</p>
+                        <h4>$89.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                      </div>
+                    </div>  
+                    <div class="grid-slide">
+                            <div class="grid-slide-inner">
+                                <img src="images/checked-stretch-dress.jpg">
+                                <h4>dresses</h4>
+                        <p>checked strech dress</p>
+                        <h4>$129.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                          </div>
+                        </div>  
+                        <div class="grid-slide">
+                                <div class="grid-slide-inner">
+                                    <img src="images/blue-hipster-backpack.jpg">
+                                    <h4>bags</h4>
+                        <p>blue hipster backpack</p>
+                        <h4>$69.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                              </div>
+                            </div>  
+                            <div class="grid-slide">
+                                    <div class="grid-slide-inner">
+                                        <img src="images/blue-silk-dress.jpg">
+                                        <h4>Dresses</h4>
+                        <p>blue silk dress</p>
+                        <h4>$139.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                                  </div>
+                                </div>  
+                                <div class="grid-slide">
+                                        <div class="grid-slide-inner">
+                                            <img src="images/cotton-yellow-tshirt.jpg">
+                                            <h4>t-shirts</h4>
+                        <p>cotton yellow t-shirt</p>
+                        <h4>$40.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                                      </div>
+                                    </div>  
+                                    <div class="grid-slide">
+                                            <div class="grid-slide-inner">
+                                                <img src="images/pink-dotted-dress.jpg">
+                                                <h4>dresses</h4>
+                        <p>pink dotted dress</p>
+                        <h4>$149.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                                          </div>
+                                        </div>  
+                                        <div class="grid-slide">
+                                                <div class="grid-slide-inner">
+                                                    <img src="images/demin-overall-shorts.jpg">
+                                                    <h4>shorts</h4>
+                        <p>denim overall shorts</p>
+                        <h4>$129.00</h4>
+                        <button class="add-to-cart">Add to Cart</button>
+                                              </div>
+                                            </div> 
+                    </div>                          
+            </div>    
+        </section>
+        <section class="sign-up">
+            <h5>Sign-up for <p>Updates</p></h5>
             <h4>Stay updated on our latest product releases, be first to
                 find out about upcoming sales, and get free style tips from
                 our blog. Unsubscribe at any time.</h4>
-                <textarea></textarea>
-                <button></button>
+               <div class="subscription">
+                    <textarea class="textBox" placeholder="Your Email"></textarea>
+                    <button class="subscribeButton">Subscribe</button>
+               </div>
+                
         </section>
-        <section>2019 Aloha Apparel Co.
-            Powered by HTML and CSS.
-            604-604-6040. <info@alohaapparel class="com"></info@alohaapparel>
-        </section>
+        
 </body>
+<footer>
+    <section class = "featured">
+        <h6> &copy; 2019 Aloha Apparel Co.<br>
+        Powered by HTML and CSS.<br><br>
+        604-604-6040. <info@alohaapparel class="com"></info@alohaapparel><br><br>
+        <p>1490 W Broadway</p>
+        <p>Vancouver, BC, Canada</p> </h6><br>
+        <ul class="social">
+             <li><i class="fab fa-facebook-f"></i></li>   
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-pinterest-p"></i></li>
+            <li> <i class="fab fa-google-plus-g"></i></li>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="flickity.js"></script>
+</footer>
 </html>
