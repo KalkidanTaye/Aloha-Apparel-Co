@@ -90,34 +90,55 @@
 /*End of Custom Fonts*/
 
 /* Logo Area */
-.logo_area{ 
+.header_container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
 }
-.aloha{
+.logo_area{
+    display: flex;
+    order: 0;
     justify-content: left;
-    width: 25%;
-    height: 25%;
-    padding-left: 10px;
-    padding-top: 20px;;
+    max-width: 100%;
+    align-items: flex-start; 
 }
-.cart{
-    justify-content: right; 
-    width: 10%;
-    height: 10%;
-    padding-right: 10px;
-    padding-top: 20px;
-    order: 1;
-    margin-left: 10px;
 
+.logo_area img {
+     
+    flex: 50%;
+    height: auto;
+    width: 80px;
+    margin: 10px 0 10px 10px;
+    max-width: 100%;
+    position: absolute;
 }
+.logo_cart {
+    flex: 50%;
+    display: flex;
+    order: 1;  
+    max-width: 100%;
+    align-items: flex-end; 
+}
+.logo_cart img{
+    justify-content: right;
+    height: auto;
+    width: 35px;
+    left: 400px;
+    margin-top: -40px; 
+    max-width: 100%;
+    position: absolute;
+}
+
 .line{
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    flex: 100%; 
+    display: flex;
+    width:400px; 
+    margin-top: 60px;
+    height: auto;
+    margin-left: 0px;
     border: 1px solid #d7d7d7;
+    float: center;
+    justify-content: center;
+    max-width: 100%;
 }
 /* Navigation Area */
 .navigation{
@@ -222,95 +243,72 @@ h4{
 
 }
 .wide_mens{
-    color: #ffffff;
     background:linear-gradient(
             rgba(0,0,0,0.25) 0%,
             rgba(0,0,0,0.25) 100%
         ), 
-        url('images/mens-category.jpg') center center;
-        background-size: cover, cover;
-        background-repeat: no-repeat;
-        flex: 100%;
-        max-width: 100%;
-        height: 180px;
-        margin: 0 0 4px 0;
-              
+        url('images/mens-category.jpg') center center;    
 }
 .square_trends{
-    color: #ffffff;
     background:linear-gradient(
             rgba(0,0,0,0.25) 0%,
             rgba(0,0,0,0.25) 100%
         ), 
         url('images/trends-category.jpg') center center;
-        background-size: cover, cover;
-        background-repeat: no-repeat;
-    flex: 50%;
-    height: 180px;
-    max-width: 50%;
-    margin: 4px 4px 4px 0 ;
+        margin-right: 4px;
 }
 .square_glasses{
-    color: #ffffff;
     background:linear-gradient(
             rgba(0,0,0,0.25) 0%,
             rgba(0,0,0,0.25) 100%
         ), 
         url('images/glasses-category.jpg') center center;
-        background-size: cover, cover;
-        background-repeat: no-repeat;
-        
-    height: 180px;
-    
-    margin: 4px 0 4px 4px;
-    max-width: auto;
-    width: 175px;
-    justify-content: flex-end;
+        margin-left: 4px;
 }
 .square_sale{
-    color: #ffffff;
     background:linear-gradient(
             rgba(0,0,0,0.25) 0%,
             rgba(0,0,0,0.25) 100%
         ), 
-        url('images/sale-category.jpg') center center;
-        background-size: cover, cover;
-        background-repeat: no-repeat;
-    flex: 50%;
-    height: 180px;
-    max-width: 50%;
-
-    margin: 4px 4px 4px 0 ;
+        url('images/sale-category.jpg') center center; 
+        margin-right: 4px;
 }
-.square_bags{
-    color: #ffffff;
+.square_bags{ 
     background:linear-gradient(
             rgba(0,0,0,0.25) 0%,
             rgba(0,0,0,0.25) 100%
         ), 
         url('images/bags-category.jpg') center center;
-        background-size: cover, cover;
-        background-repeat: no-repeat;
-        
-    height: 180px;
-    max-width: 50%;
-    width: 175px;
-    margin: 4px 0 4px 4px;
+        margin-left: 4px;
 }
 .wide_womens{
-    color: #ffffff;
-    text-align: center;
     background:linear-gradient(
             rgba(0,0,0,0.25) 0%,
             rgba(0,0,0,0.25) 100%
         ), 
-        url('images/womens-category.jpg') center center;
-        background-size: cover, cover;
-        background-repeat: no-repeat;
-        flex: 100%;
-        max-width: 100%;
-        height: 180px;
-        margin: 4px 0 4px 0;
+        url('images/womens-category.jpg') center center;    
+}
+.square_trends, .square_glasses, .square_sale, .square_bags{
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 180px;
+    max-width: 50%;
+    flex: 48%;
+    justify-content: space-evenly;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.wide_mens, .wide_womens{
+    color: #ffffff;
+    text-align: center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    flex: 100%;
+    max-width: 100%;
+    height: 180px;
+    margin: 4px 0 4px 0;
+    justify-content: space-around;
 }
 .product-header{
     text-align: center;
@@ -326,11 +324,8 @@ h4{
 /* Flickity */
 .loved_products h3 p{
     display: inline;
-    
-   
 }
 .grid-slide-inner{
-    
     margin-left: 40px;
 }
 .grid-slide-inner p{
@@ -339,7 +334,6 @@ h4{
     font-family: 'Playfair Display Regular';
     line-height: 30px;
     font-size: 20px;
-    
 }
 .grid-slide-inner h4{
     text-transform: uppercase;
@@ -360,11 +354,10 @@ h4{
     outline: none;
     margin-left: 110px;
     margin-top: 5px;
-
 }
 /* End of Flickity */
 /* Sign-Up section */
-.sign-up{
+.inner-signup{
     color: #ffffff;
     background:linear-gradient(
             rgba(0,0,0,0.25) 0%,
@@ -373,12 +366,11 @@ h4{
         url('images/wave-bkgd.jpg') center center;
         background-size: cover, 1500px 900px;
         background-position: bottom;
-        height: 350px;
+        height: 400px;
         width: auto;
         background-repeat: no-repeat;
-        margin-top: 50px;
-       
-        
+        margin-top: 50px; 
+        max-width: 100%;     
 }
 .sign-up h5 p {
     display: inline;
@@ -398,56 +390,60 @@ h5{
     z-index:1;
 }
 .sign-up h4{
-    margin-top: 70px;
+    margin: 100px 0 10px 0;
 }
 .subscription{
-    display: inline-block;
+    display: block;
     position: relative;
-    width: 400px;
-    height: 100px;
-   /* border: 1px solid #ddd;*/
+    width: auto;
+    height: auto;
+   border: 1px solid #ddd;
     margin: 0 auto;
-
+    max-width: 100%;
 }
-.textBox{
+.textBox {
     border-radius: 50px;
     border: none;
-    width:300px;
+    width:250px;
     height: 30px;
     color: grey;
-    
     display: block;
     position: relative;
     resize: none;
     outline: none;
-    margin-top: -15px;
+    margin-top: -100px;
     margin-left: auto;
     margin-right: auto;
-    
+    max-width: 100%;
+    resize: horizontal;
 }
-.subscribeButton{
+.subscribeButton {
     background-color: #e63e01;
     color: #ffffff;
     border: none;
     text-align: center;
-   
+    max-width: 100%;
     border-radius: 50px;
     width: 90px;
     height: 30px;
     font-size: 12px;
     cursor: pointer;
-    outline: none;
-    position: relative;
-    float: right;
-    top: -32px;
-    left: -50px;
-
+    margin-top: -30px;
+    top: -68px;
+    right: 0px;
+    left: 156px;
+    bottom:0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    
 }
 ::placeholder{
     padding-left: 15px;
     padding-top: 5px;
     font-size: 14px; 
     color: #969696;
+    
 }
 /* End of Sign-up */
 /* Footer Area */
@@ -462,6 +458,7 @@ h5{
     padding-top: 50px;
     margin-top: 10px;
     line-height: 25px;
+    max-width: 100%;
 }
 .social ul{
     list-style-type: none;
@@ -472,39 +469,66 @@ h5{
     margin-top: 8px;
 }
 .social li{
-    
         font-family: 'Raleway Light';
         padding: 5px 10px 0px 10px;
         size: 0%;
         display: inline;
 }
-
-.com{
-    color:white;
+ .hide-label{
+    display: none;
 }
 .featured p{
    color:  #969696;
+   
+}
+.featured a{
+    color:white;
 }
 /* End of Footer */
 
 @media only screen and (min-width: 600px){
+    .header_container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
     .line{
-        border: none;
+        display: none; 
+    } 
+    .header_container{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 20px 20px 0 20px;
+    }
+    .logo_area{ 
+        display: flex;
         
-    }  
+        justify-content: left;
         
+        max-width: 100%;
+    }
+    .logo_area img{
+        max-width: 100%;
+    }
+    .logo_cart {
+        display: flex;
+        justify-content: right;
+        order: 1;
+    }
     .navigation{
         display: flex;
-        flex-wrap: wrap;
-        font-size: 140%;
         justify-content: center;
+        max-width: 100%;
     }
     .navigation ul{
+        font-size: 20px;
         list-style-type: none;
+        justify-content: center;
         float: center;
         display: inline-table;
-        
+       
     }   
+      
     h1{
         font-family: 'Raleway Medium';
         font-size: 200%;
@@ -517,17 +541,140 @@ h5{
         text-align: center;
         margin-left: -25px;
         line-height: 100px;
-        
+    }
+    
+    h4{
+        padding: 0 110px 40px 110px;
+        font-size: 18px;
+    }
+    .square_trends, .square_glasses, .square_sale, .square_bags{
+        height: 280px;
+        max-width: 25%;
+        flex: 24%;
+        justify-content: space-evenly;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .wide_mens, .wide_womens{
+        flex: 49%;
+        max-width: 100%;
+        height: 280px;
+        margin: 4px 0 4px 0;
+        justify-content: space-around;
+    }
+    .square_bags, .wide_mens{
+        margin-right: 4px;
+    }
+    .square_trends, .wide_womens{
+        margin-left: 4px;
+    }
+    .products p{
+        font-size: 35px;
+    }
+    .inner-signup{   
+            background-size: cover, 1500px 900px;         
+            height: 365px;
+            width: auto;        
+            max-width: 100%;     
+    }
+    .subscription{
+        display: block;
+        position: relative;
+        width: auto;
+        height: auto;
+       border: 1px solid #ddd;
+        margin: 0 auto;
+        max-width: 100%;
+    
+    }
+    .subscribeButton {
+      
+        top: -68px;
+        right: 0px;
+        left: 156px;
+        bottom:0px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;  
     }
     .featured{
         display: flex;
+        flex-wrap: nowrap;
+        height: 180px;
+    }
+    .footer{
+        flex: 50%;
+        justify-content: left;
+        text-align: left;
+        /* margin-left:20px; */
+    }
+    .footer p{
+        flex: 50%;
+        justify-content: left;
+        align-self: flex-start;
+        line-height: 25px;
+        margin-left: 20px;
+    }
+    .footer h6{
+        margin-left: 20px; 
+    }
+    .footer-social{
+        flex: 50%;       
+        justify-content: right;
+      ;
+    }
+   
+    .social ul{
+        list-style-type: none;
+        font-size: 18px;
+        color: white
         
     }
-
-}
-
-@media only screen and (min-width: 1240px){
-    body {
-        background: purple;
+    .social li{
+         
+        display: block;
+        padding-right: 10px;
+       
+    }
+    .hide-label{
+        display: unset;
+        padding-left: 20px;
     }
 }
+
+
+@media only screen and (min-width: 1240px){
+    
+        h4{
+            padding: 0 110px 40px 110px;
+            font-size: 24px;
+            line-height: 45px;
+        }
+        .square_trends, .square_glasses, .square_sale, .square_bags{
+           
+            
+            height: 280px;
+            max-width: 25%;
+            flex: 24%;
+            justify-content: space-evenly;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .wide_mens, .wide_womens{
+            flex: 49%;
+            max-width: 100%;
+            height: 280px;
+            margin: 4px 0 4px 0;
+            justify-content: space-around;
+            background-position: top;
+        }
+        .square_bags, .wide_mens{
+            margin-right: 4px;
+        }
+        .square_trends, .wide_womens{
+            margin-left: 4px;
+        }
+        .products p{
+            font-size: 40px;
+        }
+    }

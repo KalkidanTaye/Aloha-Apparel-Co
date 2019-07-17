@@ -13,14 +13,17 @@
     
 </head>
 <body>
-    <section class="logo_area">
-            <img class="aloha" src="images/aloha-logo.svg" alt="">
-            <img class="cart" src="images/cart-icon.svg">
-            
-    </section> 
-    <hr class="line">
-    <section class="navigation_area">      
+    <section class="header_container">
+    <div class="logo_area">  
+         <img src="images/aloha-logo.svg" alt="">
+        </div> 
+        <div class="logo_cart">   
+                <img src="images/cart-icon.svg" alt="">   
+        </div>
+    
+    <div class="navigation_area">      
             <nav class="navigation">
+                    <hr class="line">
                 <ul class="unordered">
                     <li><a href="#about">About</a></li>
                     <li><a href="#shop">Shop</a></li>
@@ -28,10 +31,11 @@
                     <li><a href="#updates">Updates</a></li>
                 </ul>
             </nav>
-    </section>    
+        </div>  
+    </section>  
         <section class="banner">
             <div class="bannerText">
-                   <h1>New Collection</h1><br>
+                   <h1>New Collection</h1>
                    <h2>Spring/Summer 2019</h2>
             </div>   
        </section> 
@@ -112,7 +116,7 @@
                                 <div class="grid-slide">
                                         <div class="grid-slide-inner">
                                             <img src="images/cotton-yellow-tshirt.jpg">
-                                            <h4>t-shirts</h4>
+                                            <h4>Shirts</h4>
                         <p>cotton yellow t-shirt</p>
                         <h4>$40.00</h4>
                         <button class="add-to-cart">Add to Cart</button>
@@ -140,10 +144,12 @@
             </div>    
         </section>
         <section class="sign-up">
+            <div class="inner-signup">
             <h5>Sign-up for <p>Updates</p></h5>
             <h4>Stay updated on our latest product releases, be first to
                 find out about upcoming sales, and get free style tips from
                 our blog. Unsubscribe at any time.</h4>
+            </div>
                <div class="subscription">
                     <textarea class="textBox" placeholder="Your Email"></textarea>
                     <button class="subscribeButton">Subscribe</button>
@@ -154,18 +160,22 @@
 </body>
 <footer>
     <section class = "featured">
+        <div class="footer">
         <h6> &copy; 2019 Aloha Apparel Co.<br>
         Powered by HTML and CSS.<br><br>
-        604-604-6040. <info@alohaapparel class="com"></info@alohaapparel><br><br>
-        <p>1490 W Broadway</p>
-        <p>Vancouver, BC, Canada</p> </h6><br>
+        604-604-6040.<a href="#">info@alohaapparel.com</a><br></h6>
+        <p class="footer" >1490 W Broadway</p>
+        <p class="footer">Vancouver, BC, Canada</p> <br>
+        </div>
+        <div class="footer-social">
         <ul class="social">
-             <li><i class="fab fa-facebook-f"></i></li>   
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-pinterest-p"></i></li>
-            <li> <i class="fab fa-google-plus-g"></i></li>
+             <li><i class="fab fa-facebook-f"><p class="hide-label">Facebook</p></i></li>   
+            <li><i class="fab fa-twitter"><p class="hide-label">Twitter</p></i></li>
+            <li><i class="fab fa-instagram"><p class="hide-label">Instagram</p></i></li>
+            <li><i class="fab fa-pinterest-p"><p class="hide-label">Pinterest</p></i></li>
+            <li> <i class="fab fa-google-plus-g"><p class="hide-label">Google+</p></i></li>
         </ul>
+    </div>
     </section>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="flickity.js"></script>
